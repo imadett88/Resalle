@@ -1,0 +1,60 @@
+name: new_ahtu
+description: Imad Ettamen,Internship Project.
+
+publish_to: "none"
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.5 <4.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.5.0
+  firebase_auth: ^4.2.6
+  flutter_signin_button: ^2.0.0
+  curved_navigation_bar: ^1.0.3
+  google_fonts: ^5.1.0
+  firebase_database: ^10.2.4
+  animated_text_kit: ^4.2.2
+  intl: ^0.18.1
+  firestore_ui: ^1.25.1
+  flutter_datetime_picker: ^1.5.1
+  cupertino_icons: ^1.0.2
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+    android: "launcher_icon"
+    ios: true
+    image_path: "assets/icon/loico.png"
+    min_sdk_android: 21
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/logo.png
+    - assets/images/back.jpg
+    - assets/images/salle.png
+    - assets/images/back2.jpg
+    - assets/images/hme.jpg
+    - assets/images/res.png
+    - assets/images/prf.jpg
+    - assets/images/prfml.jpg
+    - assets/male_names.json
+    - assets/female_names.json
+
