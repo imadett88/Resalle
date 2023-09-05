@@ -274,7 +274,7 @@ class _SignInScreenState extends State<SignInScreen> {
               child: Column(
                 children: [
                   Text(
-                    '© Tous les droits réservés par OCP Groupe',
+                    '2023 OCP Group © Tous Les Droits Sont Réservé',
                     style: TextStyle(
                       fontSize: 12,
                       color: Colors.white,
