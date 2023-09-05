@@ -153,6 +153,7 @@ class _SignInScreenState extends State<SignInScreen> {
                             email = value;
                           });
                         },
+                        cursorColor: Colors.black,
                         decoration: InputDecoration(
                           filled: true,
                           fillColor: Colors.white,
@@ -175,6 +176,7 @@ class _SignInScreenState extends State<SignInScreen> {
                             password = value;
                           });
                         },
+                        cursorColor: Colors.black,
                         obscureText: !showPassword,
                         decoration: InputDecoration(
                           filled: true,
