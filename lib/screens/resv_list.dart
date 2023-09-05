@@ -46,6 +46,7 @@ class _ResvListScreenState extends State<ResvListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.fromLTRB(16.0, 40.0, 16.0, 16.0),
         child: Column(

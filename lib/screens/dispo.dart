@@ -16,6 +16,7 @@ class DisponibleScreen extends StatelessWidget {
     print('isAvailable: $isAvailable');
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Disponibilité'),
       ),

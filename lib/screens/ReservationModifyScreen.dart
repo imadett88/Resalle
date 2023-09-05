@@ -76,6 +76,7 @@ class _ReservationModifyScreenState extends State<ReservationModifyScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
         child: SingleChildScrollView(
           child: Padding(

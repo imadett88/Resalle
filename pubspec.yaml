@@ -29,7 +29,7 @@ dependencies:
 flutter_launcher_icons:
     android: "launcher_icon"
     ios: true
-    image_path: "assets/icon/loico.png"
+    image_path: "assets/icon/logicv.png"
     min_sdk_android: 21
 
 dev_dependencies:

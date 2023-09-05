@@ -142,7 +142,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       ),
                       Center(
                         child: Text(
-                          'Inscrivez-vous et réservez la salle',
+                          'Inscrivez-vous maintenant et réservé la salle',
                           style: TextStyle(fontSize: 16, color: Colors.white),
                         ),
                       ),
