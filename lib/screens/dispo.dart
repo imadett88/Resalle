@@ -8,7 +8,12 @@ class DisponibleScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isAvailable = currentTime.isBefore(startTime);
+    bool isAvailable = startTime.isBefore(currentTime);
+
+    // Debugging prints
+    print('startTime: $startTime');
+    print('currentTime: $currentTime');
+    print('isAvailable: $isAvailable');
 
     return Scaffold(
       appBar: AppBar(
@@ -37,6 +42,19 @@ class DisponibleScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 20),
+            Text(
+              "Heure de début: ${startTime.hour}:${startTime.minute}${startTime.minute}", // Display start time
+              style: TextStyle(
+                fontSize: 18,
+              ),
+            ),
+            Text(
+              "Date: ${startTime.day}/${startTime.month}/${startTime.year}", // Display date
+              style: TextStyle(
+                fontSize: 18,
               ),
             ),
           ],

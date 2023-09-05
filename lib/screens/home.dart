@@ -22,10 +22,14 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _isConnected = false;
   bool _isFemale = false;
 
+  // Define the start time and date variables
+  late DateTime startTime; // Retrieve this from Firebase
+  late DateTime currentDate;
   @override
   void initState() {
     super.initState();
     _initializeUserInfo();
+    startTime = DateTime(2023, 12, 12, 11, 00); // Replace this with your Firebase logic.
   }
 
   Future<void> _initializeUserInfo() async {
@@ -57,17 +61,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return femaleNames.contains(name);
   }
 
-
-
-
   Future<List<String>> _loadNamesFromJson(String assetPath) async {
     String namesJson = await DefaultAssetBundle.of(context).loadString(assetPath);
     List<dynamic> namesList = json.decode(namesJson);
     return namesList.map((dynamic name) => name.toString().toLowerCase()).toList();
   }
-
-
-
 
   Future<void> _showLogoutConfirmationDialog() async {
     bool confirmed = await showDialog(
@@ -103,7 +101,6 @@ class _HomeScreenState extends State<HomeScreen> {
       );
     }
   }
-
 
   @override
   Widget build(BuildContext context) {
